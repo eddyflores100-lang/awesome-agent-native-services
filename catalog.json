@@ -11,7 +11,7 @@
     "service_directory": "services",
     "content_digest": {
       "algorithm": "sha256",
-      "value": "e855de1af1adc285d9c82897254b8f3476cf2bce79c6eb1a1209b91a160a336f",
+      "value": "152a9a6461e9c977cc4d92a219310d2dbbf2e474d57d6e7f488a55bd46f09307",
       "input_paths": [
         "README.md",
         "skill.md",
@@ -143,6 +143,7 @@
         "services/agent-runtime-and-infrastructure/sandbase-harness.md",
         "services/agent-runtime-and-infrastructure/scrapybara.md",
         "services/agent-runtime-and-infrastructure/serena.md",
+        "services/agent-runtime-and-infrastructure/uta-trust-api.md",
         "services/agent-runtime-and-infrastructure/vertex-ai-agent-engine.md",
         "services/agent-harnesses-and-control-planes/README.md",
         "services/agent-harnesses-and-control-planes/agent-qa.md",
@@ -289,7 +290,7 @@
   },
   "counts": {
     "categories": 16,
-    "services": 253
+    "services": 254
   },
   "categories": [
     {
@@ -332,7 +333,7 @@
       "name": "Agent Runtime & Infrastructure",
       "description": "Services that provide the secure deployment substrate, session isolation, secret management, identity, gateway, and observability required to run AI agents reliably in production — the \"operating system layer\" for autonomous agents.",
       "dossier": "https://github.com/haoruilee/awesome-agent-native-services/blob/main/services/agent-runtime-and-infrastructure/README.md",
-      "service_count": 33
+      "service_count": 34
     },
     {
       "id": "agent-harnesses-and-control-planes",
@@ -4288,6 +4289,39 @@
         "http"
       ],
       "mcp_status": "available",
+      "agent_skill_status": "unavailable",
+      "latest_month_signal": null,
+      "verified_at": null,
+      "verification_sources": []
+    },
+    {
+      "id": "agent-runtime-and-infrastructure/uta-trust-api",
+      "slug": "uta-trust-api",
+      "name": "UTA Trust API",
+      "tagline": "The USB-C of agent trust.",
+      "classification": "agent-native",
+      "status": "listed",
+      "lifecycle_status": "unknown",
+      "category": "agent-runtime-and-infrastructure",
+      "website": "https://uta-trust-api.eddyflores100.workers.dev",
+      "repository": "https://github.com/alicelabs-llc/universal-trust-adapter",
+      "dossier": "https://github.com/haoruilee/awesome-agent-native-services/blob/main/services/agent-runtime-and-infrastructure/uta-trust-api.md",
+      "source_path": "services/agent-runtime-and-infrastructure/uta-trust-api.md",
+      "onboarding": {
+        "type": "url",
+        "pattern": "URL Onboarding",
+        "instruction": "# URL Onboarding:\nRead https://uta-trust-api.eddyflores100.workers.dev/openapi.json and follow the instructions to settle and call.\n\n# SDK / REST:\nnpm install agent-trust-card        # issue / verify / inspect Agent Trust Cards\n# or call the verifier directly — an agent with no pre-paid access receives\n# HTTP 402 + payment metadata, settles $0.01 USDC via x402, and retries:\nPOST https://uta-trust-api.eddyflores100.workers.dev/v1/trust/verify\n\n# Conformance (self-test a credential before submitting it):\nnpx @marketnow/uta-conformance      # signed vectors + card generator",
+        "url": "https://uta-trust-api.eddyflores100.workers.dev/openapi.json"
+      },
+      "protocols": [
+        "url-onboarding",
+        "rest",
+        "sdk",
+        "openapi",
+        "http",
+        "api"
+      ],
+      "mcp_status": "unavailable",
       "agent_skill_status": "unavailable",
       "latest_month_signal": null,
       "verified_at": null,
