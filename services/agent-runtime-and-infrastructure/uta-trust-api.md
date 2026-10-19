@@ -9,6 +9,7 @@
 | **GitHub** | https://github.com/alicelabs-llc/universal-trust-adapter |
 | **Classification** | `agent-native` |
 | **Category** | [Agent Runtime & Infrastructure Services](README.md) |
+| **License** | Open-core — SDK [`MIT OR Apache-2.0`](https://www.npmjs.com/package/agent-trust-card); engine AL-1.0; spec CC-BY-NC-ND 4.0; [license matrix](https://marketnow.site/licensing) |
 
 ---
 
@@ -68,7 +69,7 @@ UTA Trust API answers one question an agent consumer asks over HTTP: **is this a
 
 Verification is fail-closed and offline-oriented: the Ed25519 signature (RFC 8032) is checked over the JCS-canonicalized (RFC 8785) subtree (ATC-006), the CA public key is resolved from the card's own `attestation.ca_url` so no network call to the CA is required, and revocation is checked against `revocation_check_url` when `revocation_check_required: true` — an unreachable check denies rather than degrades. Verdicts are anchored as public evidence (Sigstore Rekor) so an operator can later bind "verified agent X, verdict Y at time Z" into grant records and audit trails.
 
-The service is x402-native: settlement is $0.01 USDC per single verification (or $0.08 for a 1–10 card batch) on Base mainnet, with no signup, no API key, and no human consent step — an agent that has never heard of the service can pay and call it in one round trip.
+The service is x402-native: settlement is $0.01 USDC per single verification (or $0.08 for a 1–10 card batch) on Base (Mainnet `eip155:8453` and Sepolia testnet `eip155:84532`), with no signup, no API key, and no human consent step — an agent that has never heard of the service can pay and call it in one round trip.
 
 ---
 
@@ -123,6 +124,7 @@ The service is x402-native: settlement is $0.01 USDC per single verification (or
 | SDK | npm [`agent-trust-card`](https://www.npmjs.com/package/agent-trust-card) — `issue` / `verify` / `inspect` |
 | Conformance | `npx @marketnow/uta-conformance` — signed vectors + card generator |
 | Evidence ledger | Sigstore Rekor anchors — https://www.marketnow.site/uta/conformance/anchors/ |
+| CA public keys | [JWK](https://marketnow.site/api/atc) (pinned trust anchors) · CRL: `/api/atc?action=revocation-list` · OCSP-style: `/api/ocsp?card_id=` |
 
 ---
 

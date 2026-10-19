@@ -64,7 +64,7 @@ These services can be joined with a single instruction, right now, with no human
 
 ---
 
-## Full Catalog — 16 Categories, 253 Services
+## Full Catalog — 16 Categories, 254 Services
 
 ### 1. Communication (16 services)
 *Give agents a first-class communication identity on the internet.*
@@ -196,7 +196,7 @@ These services can be joined with a single instruction, right now, with no human
 
 ---
 
-### 6. Agent Runtime & Infrastructure (33 services)
+### 6. Agent Runtime & Infrastructure (34 services)
 *Secure execution, session isolation, secrets, identity, and gateway for production agents.*
 
 | Service | Tagline | Onboarding |
@@ -234,6 +234,7 @@ These services can be joined with a single instruction, right now, with no human
 | [Cua](https://cua.ai) | Scale computer fleets for every agent | Install Driver → `cua-driver mcp` / `cua-driver skills install` — [connect your agent](https://cua.ai/docs/how-to-guides/driver/connect-your-agent); Fleets at [run.cua.ai](https://run.cua.ai) |
 | [Agent Rider](https://agentrider.fly.dev) ⭐ | Stop making your agents re-prove themselves every time. | `Read https://agentrider.fly.dev/llms.txt and follow the instructions to register a seat, mint a rider, and verify it locally` |
 | [Auten](https://auten.ai) | Give your AI agent hands. It clicks, types and sees your screen. | `curl -fsSL https://auten.ai/install \| bash` → `npx -y @autenai/mcp` — [setup for agents](https://github.com/auten-ai/auten-mcp/blob/main/llms-install.md) |
+| [UTA Trust API](https://uta-trust-api.eddyflores100.workers.dev) | The USB-C of agent trust — x402-paid verification of Agent Trust Cards | `Read https://uta-trust-api.eddyflores100.workers.dev/openapi.json and follow the instructions to settle via x402 and verify` — SDK: `npm install agent-trust-card` |
 
 ---
 

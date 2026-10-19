@@ -54,7 +54,7 @@ The services in this category were purpose-built to fill this gap.
 | [Cua](cua.md) [![⭐](https://img.shields.io/github/stars/trycua/cua?style=social)](https://github.com/trycua/cua) | Scale computer fleets for every agent | Driver MCP/CLI · cross-OS Fleets · Lume · Cua Bench · CUA-S1 | ✅ |
 | [Agent Rider](agent-rider.md) [![⭐](https://img.shields.io/github/stars/ceedot-rock/Agent-Rider?style=social)](https://github.com/ceedot-rock/Agent-Rider) | Stop making your agents re-prove themselves every time. | ES256 rider JWT · local JWKS · agent DMs · remote MCP | ✅ |
 | [Auten](auten.md) [![⭐](https://img.shields.io/github/stars/auten-ai/auten-mcp?style=social)](https://github.com/auten-ai/auten-mcp) | Give your AI agent hands on a real computer and Android phone (beta) | stdio MCP (`@autenai/mcp`) · `auten` CLI · learned skills · origin-pinned local secrets | ✅ |
-| [UTA Trust API](uta-trust-api.md) | The USB-C of agent trust — x402-paid verification of Agent Trust Cards | x402-gated REST · Ed25519/JCS fail-closed verifier · Rekor-anchored evidence · npm SDK + conformance CLI | N/A |
+| [UTA Trust API](uta-trust-api.md) [![⭐](https://img.shields.io/github/stars/alicelabs-llc/universal-trust-adapter?style=social)](https://github.com/alicelabs-llc/universal-trust-adapter) | The USB-C of agent trust — x402-paid verification of Agent Trust Cards | x402-gated REST · Ed25519/JCS fail-closed verifier · Rekor-anchored evidence · npm SDK + conformance CLI | N/A |
 
 
 

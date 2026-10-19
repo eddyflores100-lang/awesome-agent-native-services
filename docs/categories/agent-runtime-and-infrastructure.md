@@ -8,7 +8,7 @@ image: "/assets/images/editorial-runtime.webp"
 permalink: /categories/agent-runtime-and-infrastructure/
 page_kind: collection
 collection_number: "06"
-service_count: 33
+service_count: 34
 ---
 
 <p class="collection-source"><a href="https://github.com/haoruilee/awesome-agent-native-services/blob/main/services/agent-runtime-and-infrastructure/README.md">Collection notes ↗</a></p>
@@ -370,6 +370,17 @@ service_count: 33
     <div class="service-card__actions">
       <a href="https://github.com/haoruilee/awesome-agent-native-services/blob/main/services/agent-runtime-and-infrastructure/serena.md">Open dossier ↗</a>
       <a href="https://github.com/oraios/serena">Official repo ↗</a>
+    </div>
+    </div>
+  </article>
+  <article class="service-card atlas-sheet--arrival atlas-visual--02">
+    <span class="service-card__image" aria-hidden="true"></span>
+    <div class="service-card__copy">
+    <div class="service-card__overline"><span>Curated dossier</span><span>agent-native</span></div>
+    <h2 class="service-card__title">UTA Trust API</h2>
+    <div class="service-card__actions">
+      <a href="https://github.com/haoruilee/awesome-agent-native-services/blob/main/services/agent-runtime-and-infrastructure/uta-trust-api.md">Open dossier ↗</a>
+      <a href="https://github.com/alicelabs-llc/universal-trust-adapter">Official repo ↗</a>
     </div>
     </div>
   </article>
